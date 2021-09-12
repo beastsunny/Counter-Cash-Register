@@ -10,3 +10,10 @@ var returnTable = document.querySelector(".return-table")
 
 const arrayOfNotes = [2000, 500, 100, 20, 10, 5, 1]
 console.log(arrayOfNotes.length)
+
+console.log(returnTable)
+console.log(billAmt)
+console.log(cashGiven)
+console.log(checkBtn)
+console.log(nextBtn)
+console.log(billInput)
