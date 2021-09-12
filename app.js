@@ -32,4 +32,7 @@ function clickHandlerNext() {
     }
 }
 
+
+
 nextBtn.addEventListener("click", clickHandlerNext)
+checkBtn.addEventListener("click", clickHandlerCheck)
