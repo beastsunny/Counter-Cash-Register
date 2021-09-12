@@ -33,6 +33,49 @@ function clickHandlerNext() {
 }
 
 
+function clickHandlerCheck() {
+
+    console.log(cashGiven.value)
+
+    console.log("clicked")
+        //const bill = billAmt.value
+        //const cash = cashGiven.value
+    divOutput.style.display = "none"
+    returnTable.style.display = "none"
+
+    if (Number(cashGiven.value) > Number(billAmt.value) && Number(billAmt.value) > 0) {
+        returnTable.style.display = "block"
+        console.log("a " + billAmt.value)
+        console.log("a " + cashGiven.value)
+        const amountToReturn = cashGiven.value - billAmt.value
+        calculateChange(amountToReturn)
+    } else {
+
+        divOutput.style.display = "block"
+        returnTable.style.display = "none"
+
+        if (Number(cashGiven.value) < Number(billAmt.value) && Number(cashGiven.value) > 0) {
+            console.log(typeof(billAmt.value))
+            console.log("b " + billAmt.value)
+            console.log("b " + cashGiven.value)
+            divOutput.innerText = "Cash given is less than required Bill amount."
+        } else if (Number(cashGiven.value) === Number(billAmt.value)) {
+            divOutput.innerText = "No amount should be returned."
+            console.log("c " + billAmt.value)
+            console.log("c " + cashGiven.value)
+        } else if (Number(billAmt.value) < 0) {
+            divOutput.innerText = "Bill amount Entered is not valid. Please enter valid amount."
+        } else {
+            divOutput.innerText = "Cash given is not a valid amount. Please Enter the right amount"
+            console.log("d " + billAmt.value)
+            console.log("d " + cashGiven.value)
+        }
+
+    }
+}
+
+
+
 
 nextBtn.addEventListener("click", clickHandlerNext)
 checkBtn.addEventListener("click", clickHandlerCheck)
