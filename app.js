@@ -17,3 +17,19 @@ console.log(cashGiven)
 console.log(checkBtn)
 console.log(nextBtn)
 console.log(billInput)
+
+
+function clickHandlerNext() {
+    divOutput.style.display = "none"
+    console.log("clicked")
+    console.log(billAmt.value)
+    if (billAmt.value > 0) {
+        nextBtn.style.display = "none"
+        cashInput.style.display = "block"
+    } else {
+        divOutput.style.display = "block"
+        divOutput.innerText = "Invalid bill amount! Please Enter a valid bill amount to proceed"
+    }
+}
+
+nextBtn.addEventListener("click", clickHandlerNext)
