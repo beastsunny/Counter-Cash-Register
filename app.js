@@ -4,7 +4,7 @@ var billAmt = document.querySelector("#bill-amt")
 var billInput = document.querySelector(".bill-input")
 var cashInput = document.querySelector(".cash-input")
 var cashGiven = document.querySelector("#cash-given")
-var divOutput = document.querySelector("#output")
+var divOutput = document.querySelector("#Output")
 var returnTable = document.querySelector(".return-table")
 var numberNote = document.querySelectorAll(".no-of-note")
 
@@ -17,6 +17,7 @@ console.log(cashGiven)
 console.log(checkBtn)
 console.log(nextBtn)
 console.log(billInput)
+console.log(divOutput)
 
 
 returnTable.style.display = "none"
