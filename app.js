@@ -19,6 +19,9 @@ console.log(nextBtn)
 console.log(billInput)
 
 
+returnTable.style.display = "none"
+cashInput.style.display = "none"
+
 function clickHandlerNext() {
     divOutput.style.display = "none"
     console.log("clicked")
@@ -31,6 +34,8 @@ function clickHandlerNext() {
         divOutput.innerText = "Invalid bill amount! Please Enter a valid bill amount to proceed"
     }
 }
+
+
 
 
 function clickHandlerCheck() {

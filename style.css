@@ -1,0 +1,9 @@
+:root {
+    --dark-voilet: #251e3e;
+    --faint-blue: #add8e6;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
