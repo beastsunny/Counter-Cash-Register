@@ -96,6 +96,17 @@ footer {
     color: white;
 }
 
+ul {
+    padding-top: 1rem;
+    margin: 0.4rem;
+    padding-inline-start: 0px;
+}
+
+li {
+    display: inline;
+    padding: 0rem 1rem;
+}
+
 a {
     color: white;
 }
