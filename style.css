@@ -78,3 +78,17 @@ table {
     width: 100%;
     table-layout: auto;
 }
+
+footer {
+    width: 100%;
+    max-width: 500px;
+    min-height: 200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--dark-voilet);
+}
+
+a {
+    color: white;
+}
