@@ -10,53 +10,52 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Cash Register</h1>
-        <h2>Enter the bill amount and cash given by the customer and know minimum number of notes to return</h2>
-    </div>
-    <div>
-        <input placeholder="₹" type="number"></input>
-        <label id="">Bill Amount:</label>
-        <button id=""> Next </button>
-    </div>
-    <div>
-        <input placeholder="₹" type="number"></input>
-        <label id="">Cash given:</label>
-        <button id="">Check</button>
-    </div>
+    <section class="section">
+        <h1 id="header">Cash Register</h1>
+        <h2 class="description">Enter the bill amount and cash given by the customer and know minimum number of notes to return</h2>
+        <div class="bill-input">
+            <input id="bill-amt" placeholder="₹" type="number"></input>
+            <label id="bill-amt">Bill Amount:</label>
+            <button id="next"> Next </button>
+        </div>
+        <div class="cash-input">
+            <input id="cash-given" placeholder="₹" type="number"></input>
+            <label id="cash-given">Cash given:</label>
+            <button id="check-btn">Check</button>
+        </div>
 
-    <div id="Output"></div>
-
-
-    <div>
-        <table>
-            <caption>Return Change</caption>
-            <tr>
-                <th>Note</th>
-                <th>₹2000</th>
-                <th>₹500</th>
-                <th>₹100</th>
-                <th>₹20</th>
-                <th>₹10</th>
-                <th>₹5</th>
-                <th>₹1</th>
-                <th>Total notes</th>
-            </tr>
-
-            <tr>
-                <th>No. of notes</th>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-                <td class=""></td>
-            </tr>
+        <div id="Output"></div>
 
 
-        </table>
+        <div class="return-table">
+            <table class="table-value">
+                <caption>Return Change</caption>
+                <tr>
+                    <th>Note</th>
+                    <th>₹2000</th>
+                    <th>₹500</th>
+                    <th>₹100</th>
+                    <th>₹20</th>
+                    <th>₹10</th>
+                    <th>₹5</th>
+                    <th>₹1</th>
+                    <th>Total notes</th>
+                </tr>
+
+                <tr>
+                    <th>No. of notes</th>
+                    <td class=""></td>
+                    <td class=""></td>
+                    <td class=""></td>
+                    <td class=""></td>
+                    <td class=""></td>
+                    <td class=""></td>
+                    <td class=""></td>
+                    <td class=""></td>
+                </tr>
+            </table>
+        </div>
+    </section>
 
 
     </div>
