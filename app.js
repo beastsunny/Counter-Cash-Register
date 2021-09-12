@@ -6,7 +6,7 @@ var cashInput = document.querySelector(".cash-input")
 var cashGiven = document.querySelector("#cash-given")
 var divOutput = document.querySelector("#output")
 var returnTable = document.querySelector(".return-table")
-
+var numberNote = document.querySelectorAll(".no-of-note")
 
 const arrayOfNotes = [2000, 500, 100, 20, 10, 5, 1]
 console.log(arrayOfNotes.length)
@@ -74,8 +74,16 @@ function clickHandlerCheck() {
     }
 }
 
-
-
+function calculateChange(amountToReturn) {
+    let sum = 0
+    for (let i = 0; i < arrayOfNotes.length; i++) {
+        const noOfNotes = Math.trunc(amountToReturn / arrayOfNotes[i])
+        numberNote[i].innerText = noOfNotes
+        amountToReturn = amountToReturn % arrayOfNotes[i]
+        sum += noOfNotes
+    }
+    numberNote[arrayOfNotes.length].innerText = sum
+}
 
 nextBtn.addEventListener("click", clickHandlerNext)
 checkBtn.addEventListener("click", clickHandlerCheck)
