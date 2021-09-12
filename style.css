@@ -89,6 +89,13 @@ footer {
     background-color: var(--dark-voilet);
 }
 
+.footer-header {
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 1rem;
+    color: white;
+}
+
 a {
     color: white;
 }
